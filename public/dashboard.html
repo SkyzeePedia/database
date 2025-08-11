@@ -1,0 +1,46 @@
+<!-- public/dashboard.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - DB Security Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand small">DB Security • WhatsApp</div>
+    <div id="roleInfo" class="muted"></div>
+    <button id="btnLogout" class="btn ghost">Logout</button>
+  </div>
+
+  <main class="container">
+    <section class="card">
+      <h2>Tambah Nomor</h2>
+      <div class="row">
+        <input id="numberInput" class="input" placeholder="Masukkan nomor (contoh: 628123456789)">
+        <button id="btnAdd" class="btn primary">Tambah</button>
+      </div>
+      <div id="addMsg" class="msg"></div>
+    </section>
+
+    <section class="card">
+      <h2>Daftar Nomor</h2>
+      <div class="row" style="align-items:center;">
+        <input id="searchInput" class="input" placeholder="Cari nomor... (ketik 62 atau sebagian)">
+        <button id="btnSearch" class="btn">Search</button>
+        <button id="btnRefresh" class="btn">Refresh</button>
+      </div>
+      <div id="listArea" class="list-area"></div>
+    </section>
+
+    <section id="adminArea" class="card hidden">
+      <h2>Admin Panel — Logs</h2>
+      <div id="logsArea" class="list-area"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
