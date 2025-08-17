@@ -1,4 +1,7 @@
 {
-  "numbers": [],
-  "logs": []
+  "users": [
+    {
+      "password": "SkyzeePedia"
+    }
+  ]
 }
